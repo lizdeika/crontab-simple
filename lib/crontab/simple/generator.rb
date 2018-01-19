@@ -1,7 +1,6 @@
 module Crontab
   module Simple
     class Generator
-
       def self.call(config:, root:, env:)
         new(config: config, root: root, env: env).run
       end
@@ -28,7 +27,6 @@ module Crontab
       def raw(at, what)
         "#{at} #{what}"
       end
-
     end
   end
 end

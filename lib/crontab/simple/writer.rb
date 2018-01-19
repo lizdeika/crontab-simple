@@ -1,7 +1,6 @@
 module Crontab
   module Simple
     class Writer
-
       COMMAND = 'crontab -'.freeze
 
       def self.call(contents:, ruby_version:, mailto:)
@@ -30,7 +29,7 @@ module Crontab
           crontab.close_write
         end
 
-        $?.exitstatus.zero?
+        $CHILD_STATUS.exitstatus.zero?
       end
 
       def render

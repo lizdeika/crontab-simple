@@ -1,5 +1,5 @@
 namespace :crontab do
-  task :write, [:ruby_version, :root, :config, :scope] do |task, args|
+  task :write, [:ruby_version, :root, :config, :scope] do |_task, args|
     Crontab::Simple::Writer.call(
       contents: Crontab::Generator.call(
         config: Rails.application.config_for(args.config).dig('crontab', args.scope.to_s),

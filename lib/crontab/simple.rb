@@ -1,4 +1,4 @@
-require "crontab/simple/version"
+require 'crontab/simple/version'
 
 require 'crontab/simple/generator'
 require 'crontab/simple/template'
