@@ -1,7 +1,7 @@
 namespace :crontab do
   task :write, [:ruby_version, :root, :config, :scope] do |_task, args|
-    Crontab::Simple::Writer.call(
-      contents: Crontab::Generator.call(
+    ::Crontab::Simple::Writer.call(
+      contents: ::Crontab::Simple::Generator.call(
         config: Rails.application.config_for(args.config).dig('crontab', args.scope.to_s),
         root: args.root,
         env: Rails.env
@@ -12,7 +12,7 @@ namespace :crontab do
   end
 
   task :mute do
-    Crontab::Simple::Writer.call(
+    ::Crontab::Simple::Writer.call(
       contents: '',
       ruby_version: '',
       mailto: ''
