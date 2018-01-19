@@ -32,6 +32,9 @@ Naming:
 Style:
   Enabled: true
 
+Metrics/LineLength:
+  Max: 100
+
 Bundler/OrderedGems:
   Enabled: false
 Rails/SkipsModelValidations:

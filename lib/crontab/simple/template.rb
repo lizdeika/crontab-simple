@@ -5,7 +5,12 @@ module Crontab
 
       def initialize(params)
         @params = params
-        @template = File.read(File.join(File.dirname(__FILE__), 'template.text.erb'))
+        @template =
+          File.read(
+            File.join(
+              File.dirname(__FILE__), 'template.text.erb'
+            )
+          )
       end
 
       def render

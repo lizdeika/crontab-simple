@@ -9,13 +9,14 @@ Gem::Specification.new do |spec|
   spec.authors       = ['lizdeika']
   spec.email         = ['lizdeika@gmail.com']
 
-  spec.summary       = 'TODO: Write a short summary, because RubyGems requires one.'
-  spec.description   = 'TODO: Write a longer description or delete this line.'
+  spec.summary       = 'Crontab Simple'
   spec.homepage      = 'https://github.com/lizdeika/crontab-simple'
   spec.license       = 'MIT'
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
+  # Prevent pushing this gem to RubyGems.org.
+  # To allow pushes either set the 'allowed_push_host'
+  # to allow pushing to a single host or
+  # delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
   else

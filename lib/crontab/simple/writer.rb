@@ -15,9 +15,9 @@ module Crontab
 
       def run
         if write
-          puts '[write] crontab file written'
+          Rails.logger.info '[write] crontab file written'
         else
-          warn '[fail] Could not write crontab'
+          Rails.logger.warning '[fail] Could not write crontab'
         end
       end
 
