@@ -10,6 +10,7 @@ AllCops:
     - 'spec/rails_helper.rb'
     - 'spec/spec_helper.rb'
     - 'node_modules/**/*'
+    - 'vendor/**/*'
 
 Layout:
   Enabled: true
