@@ -43,6 +43,8 @@ Rails/HasManyOrHasOneDependent:
   Enabled: false
 Rails/InverseOf:
   Enabled: false
+Rails/Output:
+  Enabled: false
 Style/AsciiComments:
   Enabled: false # Use only ascii symbols in comments.
 Style/Documentation:
