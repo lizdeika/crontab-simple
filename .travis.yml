@@ -3,7 +3,9 @@ cache: bundler
 language: ruby
 rvm:
   - 2.4.1
-before_install: gem install bundler -v 1.16.1
+before_install:
+  - gem install bundler -v 1.16.1
+  - gem install rubocop
 script:
   - rubocop -c .rubocop.yml
   - bundle exec rake spec
